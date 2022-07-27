@@ -1,4 +1,4 @@
-# Eth Sign Message
+# Eth Message Sign
 
 ## [Live hosted HERE](https://docs.zmok.io/eth-message-sign/dist/index.html)
 
@@ -6,7 +6,7 @@ Web3 has its eth.personal.sign function that allows developers to use users priv
 
 Requires MetaMask or some injected Web3 Provider.
 
-<img src="./static/preview.png" width="900" alt="preview"/>
+<img src="./static/preview.png" width="400" alt="preview"/>
 
 ## How does it works?
 
