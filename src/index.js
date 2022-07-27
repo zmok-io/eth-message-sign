@@ -14,6 +14,9 @@ const originalText = document.getElementById("original-text");
 const accountThatSigned = document.getElementById("account-that-signed");
 const recoverButton = document.getElementById("recover-button");
 
+const ZMK_SIGN_MESSAGE = "Hi there from ZMOK! Sign this message to prove you have access to this wallet and we'll log you in. This won't cost you any Ether."
+
+
 // Event handlers
 // // Method that signs data
 const signData = () => {
@@ -52,8 +55,10 @@ window.onload = () => {
 
     // Request the user account and save it into input
     web3.eth.requestAccounts().then(accounts => {
-      accountInput.value = accounts[0];
+      accountInput.value = web3.utils.toChecksumAddress(accounts[0]);
     });
+
+    dataToSign.value = ZMK_SIGN_MESSAGE
 
     // Add listeners to clicks that handle the sign and recover process's
     signButton.addEventListener("click", signData);
