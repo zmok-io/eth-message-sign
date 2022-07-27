@@ -6,7 +6,7 @@ Web3 has its eth.personal.sign function that allows developers to use users priv
 
 Requires MetaMask or some injected Web3 Provider.
 
-<img src="./static/preview.png" width="400" alt="preview"/>
+<img src="./static/preview.png" width="500" alt="preview"/>
 
 ## How does it works?
 
